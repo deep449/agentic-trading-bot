@@ -18,5 +18,5 @@ llm:
     model_name: "deepseek-r1-distill-llama-70b"
 
 tools:
-  tavily:
+ tavily:
     max_results: 5
