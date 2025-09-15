@@ -9,6 +9,8 @@ streamlit
 langchain_pinecone
 fastapi[all]
 uvicorn
+langchain_groq
+
 
 
 
