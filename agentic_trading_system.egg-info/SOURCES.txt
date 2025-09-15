@@ -20,5 +20,5 @@ prompt_library/prompt.py
 toolkit/__init__.py
 toolkit/tools.py
 utils/__init__.py
-utils/config_loaders.py
+utils/config_loader.py
 utils/model_loaders.py

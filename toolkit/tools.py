@@ -1,8 +1,5 @@
 import os
 from langchain.tools import tool
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-from lancedb.rerankers import LinearCombinationReranker
-from langchain_community.vectorstores import LanceDB
 from langchain_community.tools import TavilySearchResults
 from langchain_community.tools.polygon.financials import PolygonFinancials
 from langchain_community.utilities.polygon import PolygonAPIWrapper
@@ -14,6 +11,9 @@ from utils.config_loader import load_config
 from dotenv import load_dotenv
 from pinecone import Pinecone
 load_dotenv()
+api_wrapper = PolygonAPIWrapper()
+model_loader=ModelLoader()
+config = load_config()
 
 @tool(args_schema=RagToolSchema)
 def retriever_tool(question):
